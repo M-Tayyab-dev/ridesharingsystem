@@ -1,0 +1,126 @@
+/* Reset and Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #e8f5e9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .signup-pg {
+    display: flex;
+    flex-direction: row;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 90%;
+    max-width: 950px;
+  }
+  
+  /* Left Side (Welcome Message) */
+  .signup-id {
+    flex: 1;
+    background: #00796b;;
+    color: white;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .signup-id h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .signup-id p {
+    font-size: 1.1rem;
+  }
+  
+  /* Right Side (Form Section) */
+  .signup2-id {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .signup-form {
+    width: 100%;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .signup-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .signup-form input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #c8e6c9;
+    border-radius: 8px;
+    outline: none;
+    transition: border 0.3s;
+  }
+  
+  .signup-form input:focus {
+    border-color: #00796b;;
+  }
+  
+  .signup-form button {
+    background-color: #00796b;;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .signup-form button:hover {
+    background-color: #00796b;
+  }
+  
+  .signup-form p {
+    margin-top: 15px;
+    font-size: 0.9rem;
+  }
+  
+  .signup-form a {
+    color: #00796b;;
+    text-decoration: none;
+  }
+  
+  .signup-form a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .signup-pg {
+      flex-direction: column;
+      height: auto;
+    }
+  
+    .signup-id,
+    .signup2-id {
+      width: 100%;
+      padding: 30px 20px;
+    }
+  }
+ 
+ 
